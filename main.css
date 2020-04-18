@@ -54,13 +54,13 @@ header {
 .heading {
     font-size: 3rem;
     margin-bottom: -10px;
-    /**transition: all 1s ease-out;**/
+    transition: all 1s ease-out;
     color: coral;
 }
 
 .heading-2 {
     font-size: 1.5rem;
-    /**transition: all 3s ease-out;**/
+    transition: all 3s ease-out;
     color: rgb(231, 44, 10);
     font-weight: 700;
     margin-bottom: -50px;
@@ -78,7 +78,7 @@ header {
 .items {
     margin-left: 30px;
 }
-/**
+
 .li-1 {
     transition: all 3s ease-out;
 }
@@ -94,7 +94,7 @@ header {
     transition: all 8s ease-out;
 }.li-7 {
     transition: all 9s ease-out;
-}**/
+}
 
 li {
     list-style: none;
@@ -124,7 +124,7 @@ li {
 }
 
 .paragraph {
-    /**transition: all 3s ease-out;**/
+    transition: all 3s ease-out;
     font-size: 20px;
     line-height: 3rem;
     margin: 0 40px 0 40px;
@@ -143,7 +143,7 @@ label {
 }
 
 input {
-    /**transition: all 5s ease-out;**/
+    transition: all 5s ease-out;
     margin-top: 15px;
     margin-bottom: 15px;
     min-width: 400px;
@@ -157,7 +157,7 @@ input {
 }
 
 textarea {
-    /**transition: all 5s ease-out;**/
+    transition: all 5s ease-out;
     margin-top: 15px;
     margin-bottom: 15px;
     min-width: 400px;
@@ -172,7 +172,7 @@ textarea {
 }
 
 .btn {
-    /**transition: all 7s ease-out;**/
+    transition: all 7s ease-out;
     padding: 1rem;
     display: block;
     margin-left: auto;
