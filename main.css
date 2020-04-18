@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    height: 100%;
+    font-family: serif;
+}
+
+body::after {
+    content: "";
+    background-image: url(./images/Background-1.jpg);
+    background-size: cover;
+    z-index: -2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 9, 17, 0.9);
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(22, 21, 21, 0.2);
+}
+
+.profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: -10px;
+    border:rgb(233, 227, 225) solid;
+}
+
+#banner {
+    text-align: center;
+}
+
+.heading {
+    font-size: 3rem;
+    margin-bottom: -10px;
+    transition: all 1s ease-out;
+    color: coral;
+}
+
+.heading-2 {
+    font-size: 1.5rem;
+    transition: all 3s ease-out;
+    color: rgb(231, 44, 10);
+    font-weight: 700;
+}
+
+
+#section-a, #section-b, #section-c, footer {
+    padding: 1rem;
+}
+
+#section-a {
+    display: block;
+    padding: 0;
+    margin-top: 40px; 
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.li-1 {
+    transition: all 3s ease-out;
+}
+.li-2 {
+    transition: all 4s ease-out;
+}.li-3 {
+    transition: all 5s ease-out;
+}.li-4 {
+    transition: all 6s ease-out;
+}.li-5 {
+    transition: all 7s ease-out;
+}.li-6 {
+    transition: all 8s ease-out;
+}.li-7 {
+    transition: all 9s ease-out;
+}
+
+li {
+    list-style: none;
+}
+ pre {
+     font-family: serif;
+     padding: 0;
+     margin: -40px 0 -40px 0;
+     line-height: 1rem;
+     font-weight: 700;
+
+ }
+.info-items {
+    width: 30%;
+    padding: 2rem;
+    font-weight: normal;
+}
+
+.title {
+    margin-top: -10px;
+    font-size: 30px;
+    color: coral;
+    text-align: center;
+}
+
+.paragraph {
+    transition: all 3s ease-out;
+    font-size: 20px;
+    line-height: 2rem;
+    margin-left: 13px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+
+input {
+    transition: all 5s ease-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+    padding: 1rem;
+    margin-left: 13px;
+    background-color: #edf2f7;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+textarea {
+    transition: all 5s ease-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+    padding: 1rem;
+    margin-left: 13px;
+    background-color: #edf2f7;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+.btn {
+    transition: all 7s ease-out;
+    padding: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 40%;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(231, 44, 10);
+    cursor: pointer;
+}
+
+#footer{
+    text-align: center;
+}
+
+a {
+    color: white;
+    padding: 1rem;
+} a:hover {
+    color: coral;
+}
+
+@media (min-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .profile-picture {
+        width: 50%;
+        margin-top: 20px;
+    }
+    
+    .heading {
+        padding: 1.5rem;
+        font-size: 45px;
+        text-align: center;
+    }
+    #banner {
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+
+    pre {
+        display: flex;
+        white-space: pre-line;
+        text-align: left;
+        justify-content: center;
+        margin-bottom: 10px;
+        line-height: 2rem;
+    }
+
+    .info-items {
+        margin-left: 100px;
+        text-align: center;
+    }
+
+    li {
+        line-height: 1rem;
+        font-size: 30px;
+        text-align: left;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        padding: 2rem;
+
+    }
+
+    input {
+        padding: 1.5rem;
+        width: 600px;
+        margin-left: 30px;
+    }
+
+    textarea {
+        padding: 1.5rem;
+        width: 600px;
+        margin-left: 30px;
+    }
+
+    .item-1 {
+        margin-left: 120px;
+    }
+
+    .item-2 {
+        margin-left: 55px
+    }
+    
+    .item-3 {
+        margin-left: 74px;
+    }
+
+    .item-4 {
+        margin-left: 135px;
+    }
+
+    .item-5 {
+        margin-left: 91px;
+    }
+
+    .item-6 {
+        margin-left: 85px;
+    }
+
+    .item-7 {
+        margin-left: 124px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        display: flex;
+    }
+
+    .profile-picture {
+        border-radius: 50%;
+        width: 350px;
+        margin-bottom: 40px;
+        height: 350px;
+        margin-left: 240px;
+        
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .heading {
+        position: relative;
+        top: 70px;
+        left: 40px;
+        font-size: 55px;
+    }
+
+    .heading-2 {
+        position: relative;
+        top: 200px;
+        right: 305px;
+        font-size: 25px;
+    }
+
+    .info-items {
+        margin-left: 300px;
+    }.item-1 {
+        margin-left: 240px;
+    }.item-2 {
+        margin-left: 175px
+    }.item-3 {
+        margin-left: 195px;
+    }.item-4 {
+        margin-left: 257px;
+    }.item-5 {
+        margin-left: 215px;
+    }.item-6 {
+        margin-left: 208px;
+    }.item-7 {
+        margin-left: 250px;
+    }
+
+    #section-b {
+        margin: 0 170px 0 170px;
+    }
+    
+    .title {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+   
+
+    input {
+        width: 450px;
+        font-size: 18px;
+    }#firstname {
+        margin-left: 190px;
+    }
+
+    #lastname {
+        margin-right: 190px;
+    }
+
+    #phone {
+        margin-left: 190px;
+    }
+    #email {
+        margin-right: 190px;
+    }
+    
+    label {
+        display: none;
+    }
+
+    textarea {
+        font-family: inherit;
+        font-size: 18px;
+        width: 935px;
+        margin-left: 187px;
+    }
+    textarea::placeholder {
+        font-family: serif;
+        font-size: 18px;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+}
