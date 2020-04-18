@@ -41,11 +41,9 @@ header {
 
 .profile-picture {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto -10px auto;
     width: 40%;
     border-radius: 40%;
-    margin-bottom: -10px;
     border:rgb(233, 227, 225) solid;
 }
 
@@ -65,12 +63,9 @@ header {
     /**transition: all 3s ease-out;**/
     color: rgb(231, 44, 10);
     font-weight: 700;
+    margin-bottom: -50px;
 }
 
-
-#section-a, #section-b, #section-c, footer {
-    padding: 1rem;
-}
 
 #section-a {
     display: block;
@@ -81,7 +76,7 @@ header {
 }
 
 .items {
-    margin-left: 150px;
+    margin-left: 30px;
 }
 /**
 .li-1 {
@@ -107,19 +102,22 @@ li {
  pre {
      font-family: serif;
      padding: 0;
-     margin: -40px 0 -40px 0;
      line-height: 1rem;
      font-weight: 700;
 
  }
+
+ #section-a {
+     margin: 0 -60px -50px 0;
+ }
+
 .info-items {
-    width: 30%;
     padding: 2rem;
     font-weight: normal;
 }
 
 .title {
-    margin-top: -10px;
+    margin-top: 30px;
     font-size: 30px;
     color: coral;
     text-align: center;
@@ -128,7 +126,7 @@ li {
 .paragraph {
     /**transition: all 3s ease-out;**/
     font-size: 20px;
-    line-height: 2rem;
+    line-height: 3rem;
     margin: 0 40px 0 40px;
     text-align: left;
 }
@@ -149,7 +147,7 @@ input {
     margin-top: 15px;
     margin-bottom: 15px;
     min-width: 400px;
-    max-width: 500px;
+    max-width: 600px;
     padding: 1rem;
     margin-left: 13px;
     background-color: #edf2f7;
@@ -180,8 +178,8 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    min-width: 40%;
-    max-width: 50%;
+    min-width: 250px;
+    max-width: 300px;
     background-color: coral;
     color: white;
     border: none;
@@ -303,9 +301,11 @@ and (-webkit-min-device-pixel-ratio: 1){
         font-family: serif;
         font-size: 18px;
     }
+    
 
     .btn {
         margin-top: 20px;
+        margin-left: 500px;
         text-align: center;
     }
 
