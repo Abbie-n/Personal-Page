@@ -194,118 +194,110 @@ a {
     color: coral;
 }
 
-@media (min-width: 600px) {
+@media only screen 
+and (min-width:320px)
+and (min-width:480px)  
+and (min-width:600px)
+and (min-width: 700px) {
     .container {
-        display: flex;
-        flex-direction: column;
+        text-align: center;
     }
-    
 
     .profile-picture {
-        width: 50%;
-        margin-top: 20px;
+        border-radius: 40%;
+        width: 300px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        height: 300px;
+        margin-left: 260px;
+        
+    }
+
+    #banner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .heading {
+        position: relative;
+        top: 70px;
+        left: 40px;
+        font-size: 55px;
+    }
+
+    .heading-2 {
+        position: relative;
+        top: 200px;
+        right: 305px;
+        font-size: 25px;
+    }
+
+    #section-a {
+        text-align: left;
+        margin: 0 0 0 330px;
+    }
+
+    .items {
+        margin-left: 200px;
     }
     
-    .heading {
-        padding: 1.5rem;
-        font-size: 45px;
-        text-align: center;
+    #section-b {
+        margin: 0 170px 0 170px;
     }
-    #banner {
-        margin-right: 50px;
-        margin-top: 30px;
-    }
-
-    pre {
-        display: flex;
-        white-space: pre-line;
-        text-align: left;
-        justify-content: center;
-        margin-bottom: 10px;
-        line-height: 2rem;
-    }
-
-    .info-items {
-        margin-left: 100px;
-        text-align: center;
-    }
-
-    li {
-        line-height: 2rem;
-        font-size: 30px;
-        text-align: left;
-    }
-
     .paragraph {
-        line-height: 4rem;
+        text-align: left;
+        line-height: 3rem;
     }
+    
+    .title {
+        text-align: center;
+    }
+    #section-c {
+        margin: 0 30px 0 30px;
+    }
+
     form {
         display: flex;
-        flex-direction: column;
+        flex-flow: wrap;
     }
 
-    label {
-        display: none;
-
+    .form-group {
+        text-align: center;
     }
 
     input {
-        padding: 1.5rem;
-        width: 600px;
-        margin-left: 300px;
+        max-width: 350px;
         font-size: 18px;
     }#firstname {
-        margin-left: 190px;
-    }
-
-    #lastname {
-        margin-right: 190px;
+        margin-left: 260px;
     }
 
     #phone {
-        margin-left: 190px;
+        margin-left: 260px;
     }
-    #email {
-        margin-right: 190px;
+    
+    label {
+        display: none;
     }
 
     textarea {
         font-family: inherit;
         font-size: 18px;
-        width: 935px;
-        margin-left: 187px;
+        min-width: 715px;
+        margin-left: 260px;
+    }
+    textarea::placeholder {
+        font-family: serif;
+        font-size: 18px;
     }
 
-    .item-1 {
-        margin-left: 10px;
-    }
-
-    .item-2 {
-        margin-left: 55px
-    }
-    
-    .item-3 {
-        margin-left: 74px;
-    }
-
-    .item-4 {
-        margin-left: 20px;
-    }
-
-    .item-5 {
-        margin-left: 91px;
-    }
-
-    .item-6 {
-        margin-left: 85px;
-    }
-
-    .item-7 {
-        margin-left: 124px;
+    .btn {
+        margin-top: 20px;
+        text-align: center;
     }
 }
-
-@media (min-width: 700px) {
+/**
+@media (min-width: 768px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -322,6 +314,10 @@ a {
         font-size: 45px;
         text-align: center;
     }
+
+    .heading-2 {
+        text-align: center;
+    }
     #banner {
         margin-right: 50px;
         margin-top: 30px;
@@ -330,8 +326,7 @@ a {
     pre {
         display: flex;
         white-space: pre-line;
-        text-align: left;
-        justify-content: center;
+        text-align: center;
         margin-bottom: 10px;
         line-height: 2rem;
     }
@@ -359,6 +354,10 @@ a {
         flex-direction: column;
     }
 
+    .form-group {
+        text-align: center;
+    }
+
     label {
         display: none;
     }
@@ -368,7 +367,6 @@ a {
         font-family: inherit;
         padding: 1.5rem;
         min-width: 600px;
-        margin-left: 170px;
     }
 
     textarea {
@@ -378,7 +376,7 @@ a {
     }
 
     .item-1 {
-        margin-left: 120px;
+        margin-left: 110px;
     }
 
     .item-2 {
@@ -414,19 +412,25 @@ a {
         margin-top: 20px;
         text-align: center;
     }
-}
+}**/
 
-@media (min-width: 1200px) {
+@media screen
+and (min-width:961px)  
+and (min-width:1025px)
+and (min-width:1281px)
+and (max-device-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 1){
     .container {
-        display: flex;
+        text-align: center;
     }
 
     .profile-picture {
-        border-radius: 50%;
-        width: 350px;
+        border-radius: 40%;
+        width: 300px;
+        margin-top: 30px;
         margin-bottom: 40px;
-        height: 350px;
-        margin-left: 240px;
+        height: 300px;
+        margin-left: 260px;
         
     }
 
@@ -449,28 +453,20 @@ a {
         font-size: 25px;
     }
 
-    .info-items {
-        margin-left: 300px;
-    }.item-1 {
-        margin-left: 230px;
-    }.item-2 {
-        margin-left: 175px
-    }.item-3 {
-        margin-left: 195px;
-    }.item-4 {
-        margin-left: 257px;
-    }.item-5 {
-        margin-left: 215px;
-    }.item-6 {
-        margin-left: 208px;
-    }.item-7 {
-        margin-left: 250px;
+    #section-a {
+        text-align: left;
+        margin: 0 0 0 330px;
     }
 
+    .items {
+        margin-left: 200px;
+    }
+    
     #section-b {
         margin: 0 170px 0 170px;
     }
     .paragraph {
+        text-align: left;
         line-height: 3rem;
     }
     
@@ -478,7 +474,7 @@ a {
         text-align: center;
     }
     #section-c {
-        margin: 0 70px 0 70px;
+        margin: 0 30px 0 30px;
     }
 
     form {
@@ -486,18 +482,19 @@ a {
         flex-flow: wrap;
     }
 
-    input {
-        width: 450px;
-        font-size: 18px;
-    }#firstname {
-        margin-left: 130px;
-        margin-right: -130px;
+    .form-group {
+        text-align: center;
     }
 
+    input {
+        max-width: 350px;
+        font-size: 18px;
+    }#firstname {
+        margin-left: 260px;
+    }
 
     #phone {
-        margin-left: 130px;
-        margin-right: -130px;
+        margin-left: 260px;
     }
     
     label {
@@ -507,8 +504,8 @@ a {
     textarea {
         font-family: inherit;
         font-size: 18px;
-        width: 930px;
-        margin-left: 130px;
+        min-width: 715px;
+        margin-left: 260px;
     }
     textarea::placeholder {
         font-family: serif;
