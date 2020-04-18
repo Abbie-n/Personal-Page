@@ -52,13 +52,13 @@ header {
 .heading {
     font-size: 3rem;
     margin-bottom: -10px;
-    transition: all 1s ease-out;
+    /**transition: all 1s ease-out;**/
     color: coral;
 }
 
 .heading-2 {
     font-size: 1.5rem;
-    transition: all 3s ease-out;
+    /**transition: all 3s ease-out;**/
     color: rgb(231, 44, 10);
     font-weight: 700;
 }
@@ -118,7 +118,7 @@ li {
 }
 
 .paragraph {
-    transition: all 3s ease-out;
+    /**transition: all 3s ease-out;**/
     font-size: 20px;
     line-height: 2rem;
     margin-left: 13px;
@@ -137,7 +137,7 @@ label {
 }
 
 input {
-    transition: all 5s ease-out;
+    /**transition: all 5s ease-out;**/
     margin-top: 15px;
     margin-bottom: 15px;
     width: 400px;
@@ -150,7 +150,7 @@ input {
 }
 
 textarea {
-    transition: all 5s ease-out;
+    /**transition: all 5s ease-out;**/
     margin-top: 15px;
     margin-bottom: 15px;
     width: 400px;
@@ -164,7 +164,7 @@ textarea {
 }
 
 .btn {
-    transition: all 7s ease-out;
+    /**transition: all 7s ease-out;**/
     padding: 1rem;
     display: block;
     margin-left: auto;
@@ -194,7 +194,7 @@ a {
     color: coral;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -335,6 +335,14 @@ a {
         margin-bottom: 10px;
         line-height: 2rem;
     }
+    
+    .paragraph {
+        line-height: 3rem;
+    }
+
+    #section-b {
+        margin: 0 150px 0 150px;
+    }
 
     .info-items {
         margin-left: 100px;
@@ -352,20 +360,21 @@ a {
     }
 
     label {
-        padding: 2rem;
-
+        display: none;
     }
 
     input {
+        font-size: 18px;
+        font-family: inherit;
         padding: 1.5rem;
-        width: 600px;
-        margin-left: 30px;
+        min-width: 600px;
+        margin-left: 170px;
     }
 
     textarea {
         padding: 1.5rem;
-        width: 600px;
-        margin-left: 30px;
+        min-width: 600px;
+        margin-left: 170px;
     }
 
     .item-1 {
@@ -394,6 +403,16 @@ a {
 
     .item-7 {
         margin-left: 124px;
+    }
+
+    textarea::placeholder {
+        font-family: serif;
+        font-size: 18px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        text-align: center;
     }
 }
 
@@ -433,7 +452,7 @@ a {
     .info-items {
         margin-left: 300px;
     }.item-1 {
-        margin-left: 240px;
+        margin-left: 230px;
     }.item-2 {
         margin-left: 175px
     }.item-3 {
@@ -451,35 +470,34 @@ a {
     #section-b {
         margin: 0 170px 0 170px;
     }
+    .paragraph {
+        line-height: 3rem;
+    }
     
     .title {
         text-align: center;
+    }
+    #section-c {
+        margin: 0 70px 0 70px;
     }
 
     form {
         display: flex;
         flex-flow: wrap;
-        justify-content: space-between;
     }
-
-   
 
     input {
         width: 450px;
         font-size: 18px;
     }#firstname {
-        margin-left: 190px;
+        margin-left: 130px;
+        margin-right: -130px;
     }
 
-    #lastname {
-        margin-right: 190px;
-    }
 
     #phone {
-        margin-left: 190px;
-    }
-    #email {
-        margin-right: 190px;
+        margin-left: 130px;
+        margin-right: -130px;
     }
     
     label {
@@ -489,8 +507,8 @@ a {
     textarea {
         font-family: inherit;
         font-size: 18px;
-        width: 935px;
-        margin-left: 187px;
+        width: 930px;
+        margin-left: 130px;
     }
     textarea::placeholder {
         font-family: serif;
@@ -498,6 +516,7 @@ a {
     }
 
     .btn {
+        margin-top: 20px;
         text-align: center;
     }
 
