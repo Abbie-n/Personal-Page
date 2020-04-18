@@ -88,7 +88,7 @@ body::after {
 }
 
 li {
-    margin-left: 20%;
+    margin-left: 25%;
     list-style: none;
     font-weight: bolder;
 }
@@ -116,7 +116,7 @@ li {
 
 .paragraph {
     font-size: 20px;
-    line-height: 3rem;
+    line-height: 4rem;
     margin: 0 40px 0 40px;
     text-align: left;
 }
