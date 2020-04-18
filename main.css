@@ -75,7 +75,7 @@ header {
     font-size: 1.5rem;
     line-height: 3rem;
 }
-
+/**
 .li-1 {
     transition: all 3s ease-out;
 }
@@ -91,7 +91,7 @@ header {
     transition: all 8s ease-out;
 }.li-7 {
     transition: all 9s ease-out;
-}
+}**/
 
 li {
     list-style: none;
@@ -192,6 +192,117 @@ a {
     padding: 1rem;
 } a:hover {
     color: coral;
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .profile-picture {
+        width: 50%;
+        margin-top: 20px;
+    }
+    
+    .heading {
+        padding: 1.5rem;
+        font-size: 45px;
+        text-align: center;
+    }
+    #banner {
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+
+    pre {
+        display: flex;
+        white-space: pre-line;
+        text-align: left;
+        justify-content: center;
+        margin-bottom: 10px;
+        line-height: 2rem;
+    }
+
+    .info-items {
+        margin-left: 100px;
+        text-align: center;
+    }
+
+    li {
+        line-height: 2rem;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .paragraph {
+        line-height: 4rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: none;
+
+    }
+
+    input {
+        padding: 1.5rem;
+        width: 600px;
+        margin-left: 300px;
+        font-size: 18px;
+    }#firstname {
+        margin-left: 190px;
+    }
+
+    #lastname {
+        margin-right: 190px;
+    }
+
+    #phone {
+        margin-left: 190px;
+    }
+    #email {
+        margin-right: 190px;
+    }
+
+    textarea {
+        font-family: inherit;
+        font-size: 18px;
+        width: 935px;
+        margin-left: 187px;
+    }
+
+    .item-1 {
+        margin-left: 10px;
+    }
+
+    .item-2 {
+        margin-left: 55px
+    }
+    
+    .item-3 {
+        margin-left: 74px;
+    }
+
+    .item-4 {
+        margin-left: 20px;
+    }
+
+    .item-5 {
+        margin-left: 91px;
+    }
+
+    .item-6 {
+        margin-left: 85px;
+    }
+
+    .item-7 {
+        margin-left: 124px;
+    }
 }
 
 @media (min-width: 700px) {
