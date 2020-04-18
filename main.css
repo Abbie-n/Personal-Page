@@ -4,14 +4,13 @@
 
 body {
     margin: 0;
-    color: white;
+    background-color: rgb(248, 244, 244);
     height: 100%;
     font-family: serif;
 }
 
 body::after {
     content: "";
-    background-image: url(./images/Background-1.jpg);
     background-size: cover;
     z-index: -2;
     position: fixed;
@@ -27,12 +26,23 @@ body::after {
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(13, 9, 17, 0.9);
     z-index: -1;
 }
 
-header {
-    background-color: rgba(22, 21, 21, 0.2);
+.main-container {
+    display: grid;
+    grid-template-columns: 430px 700px;
+}
+
+.sub-container-a {
+    background-color: rgb(21, 21, 22);
+    color: #fff;
+    border-radius: 60px;
+    margin: 20px 0 20px 20px;
+}
+
+.sub-container-b {
+    color: #000;
 }
 
 .container {
@@ -44,7 +54,6 @@ header {
     margin: 30px auto -10px auto;
     width: 40%;
     border-radius: 40%;
-    border:rgb(233, 227, 225) solid;
 }
 
 #banner {
@@ -52,79 +61,51 @@ header {
 }
 
 .heading {
+    color: cornsilk;
     font-size: 3rem;
     margin-bottom: -10px;
-    transition: all 1s ease-out;
-    color: coral;
+    
 }
 
 .heading-2 {
+    color: cornsilk;
     font-size: 1.5rem;
-    transition: all 3s ease-out;
-    color: rgb(231, 44, 10);
     font-weight: 700;
     margin-bottom: -50px;
 }
 
 
 #section-a {
-    display: block;
-    margin: 10px 0 0 40px; 
+    display: block; 
     font-size: 1.5rem;
     line-height: 3rem;
     text-align: left;
 }
 
-.items {
-    margin-left: 30px;
-}
-
-.li-1 {
-    transition: all 3s ease-out;
-}
-.li-2 {
-    transition: all 4s ease-out;
-}.li-3 {
-    transition: all 5s ease-out;
-}.li-4 {
-    transition: all 6s ease-out;
-}.li-5 {
-    transition: all 7s ease-out;
-}.li-6 {
-    transition: all 8s ease-out;
-}.li-7 {
-    transition: all 9s ease-out;
-}
-
 li {
     list-style: none;
+    font-weight: bolder;
 }
- pre {
-     font-family: serif;
-     padding: 0;
-     line-height: 1rem;
-     font-weight: 700;
-
- }
 
  #section-a {
-     margin: 0 -60px -50px 0;
+     margin: 70px -60px -50px 0;
+     line-height: 2.5rem;
  }
 
 .info-items {
     padding: 2rem;
     font-weight: normal;
+    margin-left: 40px;
 }
 
 .title {
     margin-top: 30px;
     font-size: 30px;
-    color: coral;
+    color: rgb(39, 55, 145);
     text-align: center;
 }
 
 .paragraph {
-    transition: all 3s ease-out;
     font-size: 20px;
     line-height: 3rem;
     margin: 0 40px 0 40px;
@@ -143,28 +124,26 @@ label {
 }
 
 input {
-    transition: all 5s ease-out;
     margin-top: 15px;
     margin-bottom: 15px;
-    min-width: 400px;
+    min-width: 500px;
     max-width: 600px;
     padding: 1rem;
     margin-left: 13px;
-    background-color: #edf2f7;
+    background-color: #ccd6e0;
     border: none;
     border-radius: 10px;
     outline: none;
 }
 
 textarea {
-    transition: all 5s ease-out;
     margin-top: 15px;
     margin-bottom: 15px;
-    min-width: 400px;
+    min-width: 500px;
     max-width: 715px;
     padding: 1rem;
     margin-left: 13px;
-    background-color: #edf2f7;
+    background-color: #ccd6e0;;
     border: none;
     border-radius: 10px;
     outline: none;
@@ -172,7 +151,6 @@ textarea {
 }
 
 .btn {
-    transition: all 7s ease-out;
     padding: 1rem;
     display: block;
     margin-left: auto;
@@ -180,7 +158,7 @@ textarea {
     margin-top: 10px;
     min-width: 250px;
     max-width: 300px;
-    background-color: coral;
+    background-color: rgb(21, 21, 22);
     color: white;
     border: none;
     border-radius: 10px;
@@ -188,7 +166,7 @@ textarea {
 }
 
 .btn:hover {
-    background-color: rgb(231, 44, 10);
+    background-color: rgb(41, 42, 44);
     cursor: pointer;
 }
 
@@ -197,10 +175,10 @@ textarea {
 }
 
 a {
-    color: white;
+    color: #000;
     padding: 1rem;
 } a:hover {
-    color: coral;
+    color: rgb(20, 34, 114);
 }
 
 @media screen
@@ -210,50 +188,47 @@ and (min-width: 1025px)
 and (min-width: 1281px)
 and (max-device-width: 1600px) 
 and (-webkit-min-device-pixel-ratio: 1){
-    .container {
-        text-align: center;
+    .main-container {
+        display: grid;
+        grid-template-columns: 500px 700px;
+        overflow: hidden;
+    }
+
+    .sub-container-b {
+        margin-right: -100px;
     }
 
     .profile-picture {
+        display: block;
+        margin: 30px auto -10px auto;
+        width: 40%;
         border-radius: 40%;
-        width: 300px;
-        margin-top: 30px;
-        margin-bottom: 40px;
-        height: 300px;
-        margin-left: 260px;
-        
     }
 
-    #banner {
-        display: flex;
-        flex-direction: row;
+    #section-a {
+        display: block; 
+        font-size: 1.5rem;
+        line-height: 4rem;
+        text-align: left;
+        margin-top: 90px;
     }
 
     .heading {
-        position: relative;
-        top: 70px;
-        left: 40px;
         font-size: 55px;
     }
 
     .heading-2 {
-        position: relative;
-        top: 200px;
-        right: 305px;
         font-size: 25px;
     }
 
-    #section-a {
-        text-align: left;
-        margin: 0 0 0 330px;
-    }
-
     .items {
-        margin-left: 200px;
+        padding: 1rem;
+        margin-left: 0px;
     }
     
     #section-b {
-        margin: 0 170px 0 170px;
+        text-align: left;
+        margin: 0 0 0 50px;
     }
     .paragraph {
         text-align: left;
@@ -263,28 +238,27 @@ and (-webkit-min-device-pixel-ratio: 1){
     .title {
         text-align: center;
     }
-    #section-c {
-        margin: 0 30px 0 30px;
-    }
 
-    form {
-        display: flex;
-        flex-flow: wrap;
-    }
 
     .form-group {
         text-align: center;
+        display: flex;
+        flex-direction: row;
     }
 
     input {
-        min-width: 350px;
+        min-width: 500px;
         font-size: 18px;
     }#firstname {
-        margin-left: 260px;
+        margin-left: 170px;
+    }#lastname {
+        margin-left: 170px;
     }
-
     #phone {
-        margin-left: 260px;
+        margin-left: 170px;
+    }
+    #email {
+        margin-left: 170px;
     }
     
     label {
@@ -294,8 +268,8 @@ and (-webkit-min-device-pixel-ratio: 1){
     textarea {
         font-family: inherit;
         font-size: 18px;
-        min-width: 715px;
-        margin-left: 260px;
+        min-width: 605px;
+        margin-left: 120px;
     }
     textarea::placeholder {
         font-family: serif;
@@ -305,7 +279,7 @@ and (-webkit-min-device-pixel-ratio: 1){
 
     .btn {
         margin-top: 20px;
-        margin-left: 500px;
+        margin-left: 265px;
         text-align: center;
     }
 
